@@ -1,11 +1,11 @@
 {
-    "topic": "Thread 🧵👇: Building Scalable APIs.",
-    "sub-topics": {
-        "API Architecture": "The first step towards building scalable APIs is to design an architecture that is well-structured and optimized for performance. This can include designing components such as endpoints, request and response objects, caching strategies, and authentication protocols.",
-        "API Versioning": "A key element of designing a scalable API is to develop a versioning system. This will ensure that new features are introduced without breaking existing applications. A good approach is to use versioning within the URL.",
-        "API Documentation": "A well-maintained API documentation is essential for developers to understand the API and how to use it. It should include information such as the endpoints, parameters, authentication, and data formats.",
-        "API Performance": "API performance is critical to ensuring the success of an API. It should be tested and monitored on a regular basis. This can be done using tools such as load testing, monitoring response time, and tracking errors.",
-        "API Security": "Security is crucial for any API. It should be designed to protect against malicious attacks and protect user data. This can be done using encryption, authentication, and authorization protocols."
+    "topic": "Object-Oriented Programming",
+    "subTopics": {
+        "Classes & Objects": "Object-oriented programming (OOP) is a programming paradigm whereby objects are used to store data and methods are used to interact with that data. Classes are used to define the objects and their properties, while objects are the actual instances of these classes. An example of this would be a class for a car, which could include properties like make, model, and color. An object is an instance of this class, like a red Ford Mustang.",
+        "Inheritance": "Inheritance is a key concept in OOP that allows for the reuse of code. Classes can inherit properties and methods from other classes, allowing for efficient coding. For example, a superclass named Vehicle could contain properties like make, model, and color, while a subclass named Car could inherit those properties and also contain additional properties like number of doors and engine size.",
+        "Polymorphism": "Polymorphism is a concept in OOP that allows objects to be treated differently depending on their type. This allows for the same code to be used to interact with different objects, as long as they have the same properties. For example, if a class named Vehicle had a method called drive(), this method could be used to drive a car, truck, or motorcycle, as long as they all have the same properties and methods.",
+        "Encapsulation": "Encapsulation is a concept in OOP that binds data and methods together into one logical unit. By encapsulating data and methods, only certain pieces of code can access and modify the data, allowing for better control and protection of the data. For example, a class for a car could contain private variables for the make and model, which can only be modified via public methods in the class.",
+        "Abstraction": "Abstraction is a concept in OOP that allows for the hiding of internal details, allowing for simpler interactions with an object. This allows for the code to be more user-friendly, since the user does not need to know the details of how the code works. For example, a class for a car could have a method called drive(), which would start the car without the user having to know the technical details of how it works."
     },
-    "CTA": "Follow @api_dojo to stay up-to-date on the latest API design trends and techniques."
+    "cta": "Now that you know the basics of Object-Oriented Programming, follow @api_dojo to learn more!"
 }

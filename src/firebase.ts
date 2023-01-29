@@ -1,6 +1,7 @@
 import admin from "firebase-admin";
 import firebaseConfigJson from "../firebaseConfig";
 import { getDatabase } from 'firebase-admin/database';
+import { ITopic } from "./utility";
 
 
 
@@ -17,24 +18,28 @@ const app = admin.initializeApp({
 const db = getDatabase(app);
 
 export default class DojoDB {
-    private ref = db.ref("api-dojo");
-    private topicsRef = this.ref.child("/topics");
+    private ref = db.ref("api-dojo/topics");
+    private topicsRef = this.ref.push();
 
-    async createTopic(data: string) {
+    async createTopic(data: string | ITopic) {
 
        await this.topicsRef.set({
-            topics: data
+            data
         })
+        console.log("data written... ", data);
+        
     }
 
     async readAllTopics () {
-        const result: string[] = [];
+        const results: string[] = [];
 
-        await this.topicsRef.once("value", (snapshot: any) => {
+        await this.ref.once("value", (snapshot: any) => {
             snapshot.forEach((data: any) => {
-                result.push(data.val())
+                results.push(data.val())
             })
         })
+
+        return results;
     }
 
 }
