@@ -27,7 +27,8 @@ const task = cron.schedule(
         }
     });
 
-    task.start();
+// task.start();
+tweet();
 
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}...`);
