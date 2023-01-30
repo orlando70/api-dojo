@@ -1,11 +1,14 @@
 import admin from "firebase-admin";
-import firebaseConfigJson from "../firebaseConfig";
+import firebaseConfigJson from "../.firebase/firebaseConfig";
 import { getDatabase } from 'firebase-admin/database';
 import { ITopic } from "./utility";
 
 
 
 const firebaseConfig = JSON.parse(JSON.stringify(firebaseConfigJson));
+
+console.log(firebaseConfigJson);
+
 
 const app = admin.initializeApp({
     credential: admin.credential.cert({
