@@ -1,4 +1,5 @@
 import express from "express";
+import {Request, Response} from "express";
 import env from "dotenv";
 import { tweet } from "./tweet";
 import cron from "node-cron";
@@ -29,6 +30,10 @@ const task = cron.schedule(
     });
 
 task.start();
+
+app.use("/healthz", (_: Request, res: Response) => {
+    res.status(200).send({status: "OK"});
+})
 
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}...`);
