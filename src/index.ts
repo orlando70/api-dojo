@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const task = cron.schedule(
     //run by 12:00(noon) daily
-    `0 12 */1 * *`,
+    `0 */12 * * *`,
     async () => {
         try {
             tweet();
@@ -30,6 +30,7 @@ const task = cron.schedule(
     });
 
 task.start();
+// tweet();
 
 app.use("/healthz", (_: Request, res: Response) => {
     res.status(200).send({status: "OK"});
@@ -37,4 +38,4 @@ app.use("/healthz", (_: Request, res: Response) => {
 
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}...`);
-})
+});

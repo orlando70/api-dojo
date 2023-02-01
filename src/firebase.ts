@@ -7,9 +7,6 @@ import { ITopic } from "./utility";
 
 const firebaseConfig = JSON.parse(JSON.stringify(firebaseConfigJson));
 
-console.log(firebaseConfigJson);
-
-
 const app = admin.initializeApp({
     credential: admin.credential.cert({
         ...firebaseConfig,

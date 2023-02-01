@@ -1,11 +1,11 @@
 {
-    "topic": "Version Control Systems in Software Engineering",
+    "topic": "Accessibility Testing of APIs",
     "subTopics": {
-        "Local Version Control": "Local version control is a system that allows developers to store their code changes in a local repository. This system allows developers to track and store changes to any type of file, including source code, configuration files, and text documents. It also enables multiple developers to work on the same project and merge their changes with ease.",
-        "Centralized Version Control": "Centralized version control is a system that allows developers to store their code in a centralized place. It allows multiple developers to collaborate on the same project and merge their changes with ease. It also enables developers to track changes to any type of file, including source code, configuration files, and text documents.",
-        "Distributed Version Control": "Distributed version control is a system that allows developers to store their code in multiple locations. Each location has its own repository with its own version of the code. This system allows multiple developers to collaborate on the same project and merge their changes with ease. It also enables developers to track changes to any type of file, including source code, configuration files, and text documents.",
-        "Git": "Git is a distributed version control system that allows developers to store their code in multiple locations. It allows multiple developers to collaborate on the same project and merge their changes with ease. It also enables developers to track changes to any type of file, including source code, configuration files, and text documents.",
-        "Subversion": "Subversion is a centralized version control system that allows developers to store their code in a centralized place. It enables multiple developers to collaborate on the same project and merge their changes with ease. It also enables developers to track changes to any type of file, including source code, configuration files, and text documents."
-    },
-    "cta": "Developers should understand the importance of version control and pick the right system for their project. Follow @api_dojo to stay up to date with the latest developments in software engineering."
+        "Definition": "Accessibility testing of an API is the process of evaluating the accessibility and usability of an application programming interface (API) for people with disabilities.",
+        "Testing Methods": "Testing methods may include automation, manual, and dynamic testing. Automation tests can be used to check for errors, while manual testing is important for testing accessibility features such as keyboard navigation.",
+        "Tools": "There are many tools available for automating accessibility tests for APIs, such as Google's Lighthouse, the Accessibility Insights for Web tool, and the Accessibility Developer Tools.",
+        "Best Practices": "Best practices for accessibility testing of an API include making sure that all features are accessible to everyone, testing for errors, and providing clear and concise documentation for users.",
+        "Example": "For example, an API that allows users to access data from a database should be tested to make sure that all features are accessible to a user with a disability, such as a keyboard-only user."
+    }, 
+    "cta": "Follow @api_dojo to stay up to date on the latest trends in accessibility testing of APIs!"
 }

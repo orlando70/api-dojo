@@ -1,8 +1,6 @@
 import Utils from "./utility"
 
 
-
-
 export const tweet = async () => {
 
     const util = new Utils({
@@ -10,5 +8,4 @@ export const tweet = async () => {
     });
 
     await util.processAndPostTweet();
-    
 }
