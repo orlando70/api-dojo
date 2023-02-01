@@ -1,5 +1,5 @@
 import admin from "firebase-admin";
-import firebaseConfigJson from "../.firebase/firebaseConfig";
+import firebaseConfigJson from "../firebaseConfig";
 import { getDatabase } from 'firebase-admin/database';
 import { ITopic } from "./utility";
 
