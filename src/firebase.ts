@@ -1,11 +1,11 @@
 import admin from "firebase-admin";
-import firebaseConfigJson from "../firebaseConfig";
+import firebaseConfigJson from "./firebaseConfig";
 import { getDatabase } from 'firebase-admin/database';
 import { ITopic } from "./utility";
 
 
-
 const firebaseConfig = JSON.parse(JSON.stringify(firebaseConfigJson));
+
 
 const app = admin.initializeApp({
     credential: admin.credential.cert({
@@ -30,7 +30,7 @@ export default class DojoDB {
         
     }
 
-    async readAllTopics () {
+    async readAllTopics (): Promise<string[]> {
         const results: string[] = [];
 
         await this.ref.once("value", (snapshot: any) => {

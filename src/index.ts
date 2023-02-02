@@ -30,7 +30,6 @@ const task = cron.schedule(
     });
 
 task.start();
-// tweet();
 
 app.use("/healthz", (_: Request, res: Response) => {
     res.status(200).send({status: "OK"});
