@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const task = cron.schedule(
     //run by 12:00(noon) daily
-    `0 */12 * * *`,
+    `0 */3 * * *`,
     async () => {
         try {
             tweet();
