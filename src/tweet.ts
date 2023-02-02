@@ -7,7 +7,5 @@ export const tweet = async () => {
         apiKey: `${process.env.OPEN_AI_KEY}`
     });
 
-    // await util.processAndPostTweet();
-    console.log("hI");
-    
+    await util.processAndPostTweet();    
 }
